@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: false
+  offer: one
+  user: one
+  comment: MyString
+
+two:
+  status: false
+  offer: two
+  user: two
+  comment: MyString
