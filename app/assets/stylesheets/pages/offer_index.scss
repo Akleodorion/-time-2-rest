@@ -1,0 +1,15 @@
+
+.index-main-container {
+  display: flex;
+  justify-content: space-around;
+
+  .left-container{
+    width: 40%;
+    height: calc(100vh - 100px);
+  }
+
+  .right-container{
+    width: 40%;
+    height: calc(100vh - 100px);
+  }
+}

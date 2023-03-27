@@ -1,1 +1,10 @@
-<h1>Hello</h1>
+<div class="index-main-container">
+  <div class="left-container"></div>
+  <div class="right-container">
+
+    <% @offers.each do |offer| %>
+      <%= render partial: 'shared/offer_card', locals: { offer: offer} %>
+    <% end %>
+
+  </div>
+</div>
