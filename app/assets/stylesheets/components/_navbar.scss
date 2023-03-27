@@ -1,0 +1,29 @@
+
+.navbar-container{
+  background-image: url('slider-one.jpg');
+  opacity: 0.9;
+  width: 100%;
+  min-height: 92px;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-link {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      color: white;
+      font-family: 'Satisfy', cursive;
+    }
+    img{
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+}

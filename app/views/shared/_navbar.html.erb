@@ -1,0 +1,27 @@
+ <div class="navbar-container">
+      <%= link_to root_path, class:'logo-link' do  %>
+      <%= image_tag 'favicon.png', alt: "logo" %>
+      <h1 class="logo">Time2Rest</h1>
+      <% end %>
+      <%= form_with url: root_path, method: :get, class: 'search-form' do %>
+        <div class="left-container">
+          <i class="fa-solid fa-magnifying-glass" style= "color: white;"></i>
+          <%= text_field_tag :job_title,
+              params[:job_title],
+              class: "form-control no-border",
+              placeholder: "métier"
+          %>
+        </div>
+        <div class="left-container">
+          <%= text_field_tag :job_title,
+              params[:job_title],
+              class: "form-control no-border",
+              placeholder: "métier"
+          %>
+          <i class="fa-solid fa-location-dot" style= "color: white;"></i>
+        </div>
+        <div class="left-container"></div>
+      <% end %>
+
+      <%= render partial: 'shared/button_primary', locals: {text: 'Nouvelle Offre', path: new_offer_path} %>
+  </div>
