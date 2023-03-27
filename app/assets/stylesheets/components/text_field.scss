@@ -1,4 +1,31 @@
 .search-form{
   display: flex;
-  border: 1px solid white;
+  align-items: center;
+  height: 45px;
+  background-color: rgba($color: white, $alpha: 0.5);
+  border-radius: 12px;
+
+  .form-control {
+    min-width: 250px;
+    height: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 16px;
+  }
+  i {
+    font-size: 16px;
+  }
+  .right-container{
+    border-left: 1px solid white;
+    height: 90%;
+    i {
+      margin: 0px 5px;
+    }
+  }
+  .left-container{
+    height: 90%;
+    i {
+      margin: 0px 5px;
+    }
+  }
 }

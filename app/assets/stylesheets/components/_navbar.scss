@@ -26,4 +26,18 @@
     }
   }
 
+  .nav-right-container {
+    height: fit-content;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i{
+      font-size: 32px;
+      color: white;
+      margin-left: 15px;
+    }
+  }
+
 }
