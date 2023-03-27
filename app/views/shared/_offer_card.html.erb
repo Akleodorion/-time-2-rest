@@ -1,0 +1,24 @@
+<div class="offer-card-container">
+  <div class="offer-card-left-container">
+  </div>
+  <div class="offer-card-middle-container">
+    <h2><%= offer.job_title %></h2>
+    <p><%= offer.description %></p>
+  </div>
+  <div class="offer-card-right-container">
+    <%= image_tag 'base_picture.png', alt: "picture", class: 'mini-avatar' %>
+    <div class="offer-infos">
+      <div class="one-info">
+        <i class="fa-sharp fa-solid fa-map-pin"></i>
+        <i class="fa-solid fa-calendar-days"></i>
+        <i class="fa-solid fa-euro-sign"></i>
+      </div>
+      <div class="two-info">
+        <p>Lille</p>
+        <p><%= offer.start_date %></p>
+        <p><%= offer.salary %></p>
+      </div>
+    </div>
+    <%= render partial: 'shared/button_secondary', locals: {path: root_path, text: 'details'} %>
+  </div>
+</div>

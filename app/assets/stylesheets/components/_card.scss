@@ -1,0 +1,61 @@
+
+.offer-card-container{
+  display: flex;
+  width: 100%;
+  min-width: 500px;
+  margin: 10px 0px;
+  padding: 10px 0px;
+
+  .offer-card-left-container{
+    width: 5%;
+    background-color: #60A3AB;
+  }
+
+  .offer-card-middle-container{
+    width: 70%;
+    background-color: #FFFFFF;
+  }
+
+  .offer-card-right-container{
+    width: 25%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: #60A3AB;
+  }
+
+  .offer-infos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  .one-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  .two-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    text-align: start;
+    p{
+      margin: 5px 0px;
+    }
+  }
+  i {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25%;
+  }
+
+}
