@@ -1,6 +1,6 @@
 <div class="index-main-container">
   <div class="left-container"></div>
-  <div class="right-container">
+  <div class="right-container" data-controller="show-modal">
 
     <% @offers.each do |offer| %>
       <%= render partial: 'shared/offer_card', locals: { offer: offer} %>

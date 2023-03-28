@@ -1,4 +1,4 @@
-<div class="offer-card-container">
+<div class="offer-card-container" data-show-modal-target="modalContent">
   <div class="offer-card-left-container">
   </div>
   <div class="offer-card-middle-container">
@@ -19,6 +19,6 @@
         <p><%= offer.salary %></p>
       </div>
     </div>
-    <%= render partial: 'shared/button_secondary', locals: {path: root_path, text: 'details'} %>
+    <%= render partial: 'shared/button_secondary', locals: {path: modal_path(@offer), text: 'details', id: offer.id}, remote: true %>
   </div>
 </div>
