@@ -1,0 +1,39 @@
+<div class="modal" data-show-modal-target="modal">
+  <div class="modal-left-container"></div>
+  <div class="modal-right-container">
+    <div class="modal-rc-left-container"></div>
+    <div class="modal-rc-middle-container">
+      <div class="square"><i class="fa-solid fa-arrow-right" data-action= "click->show-modal#close_modal"></i></div>
+    </div>
+    <div class="modal-rc-right-container">
+
+      <h2><%= @offer.job_title %></h2>
+
+      <div class="infos-container">
+        <div class="infos">
+          <div class = "single-info">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-map-pin"></i>
+            <i class="fa-solid fa-calendar-days"></i>
+            <i class="fa-solid fa-euro-sign"></i>
+
+          </div>
+
+          <div class = "single-info">
+            <p><%= @user.first_name + ' ' + @user.last_name %></p>
+            <p>Lille</p>
+            <p> <%= @offer.start_date %></p>
+            <p> <%= @offer.salary %></p>
+
+          </div>
+        </div>
+        <%= image_tag 'base_picture.png', alt: "avatar", style: "width: 35%;" %>
+      </div>
+
+      <div class="description-container">
+        <p> <%= @offer.description %></p>
+      </div>
+      <%= render partial: 'shared/button_primary',locals: {text: 'Postuler', path: new_offer_path} %>
+    </div>
+  </div>
+</div>
